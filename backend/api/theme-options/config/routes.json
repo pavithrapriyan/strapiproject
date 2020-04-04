@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/theme-options",
+      "handler": "theme-options.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/theme-options",
+      "handler": "theme-options.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/theme-options",
+      "handler": "theme-options.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

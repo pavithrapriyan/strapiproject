@@ -1,0 +1,14 @@
+Home page
+	Featured section
+	latest blog
+Footer
+Single page
+	Hero section
+	sidebar
+		-Recent post
+		-Top Category
+	Single page content
+category page
+	Hero section
+	sidebar
+	category list

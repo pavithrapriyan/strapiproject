@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "theme_options",
+  "info": {
+    "name": "Theme Options"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "sitelogo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "sitetitle": {
+      "type": "string"
+    },
+    "id": {
+      "type": "uid"
+    }
+  }
+}
