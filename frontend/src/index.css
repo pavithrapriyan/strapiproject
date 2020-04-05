@@ -181,7 +181,6 @@ div#banner {
   position: relative;
 }
 #banner .card-img-overlay {
-  background-image: url(http://localhost:1337/uploads/7f60f6920a0b45b3a0688e4713947e4f.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 350px;

@@ -16,7 +16,7 @@ const Recentpost = () => {
                                         return (
                                             <Link to={`/article/${article.id}`}>
                                                 <div className="thumnailimage">
-                                                    <img src={"http://localhost:1337" + article.image.url} alt="" />
+                                                    <img src={process.env.REACT_APP_BACKEND_URL + article.image.url} alt="" />
                                                 </div>
                                                 <div className="Contentarea">
                                                     {article.title}

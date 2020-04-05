@@ -9,13 +9,14 @@ import Sidebar from "../../components/Sidebar"
 
 const Article = () => {  
   let { id } = useParams();
+  let image = process.env.REACT_APP_BACKEND_URL + "/uploads/7f60f6920a0b45b3a0688e4713947e4f.jpg";
   return (
     <Query query={ARTICLE_QUERY} id={id}>
       {({ data: { article } }) => {
         return (
           <div>
             <div id="banner">
-                <div class="card-img-overlay">
+                <div class="card-img-overlay" style={{backgroundImage:`url(${image})`}}>
                     <div className="container">
                         <h4>{article.title}</h4>
                     </div>
@@ -27,7 +28,7 @@ const Article = () => {
                     <div className="row">
                         <div className="col-8">
                             <div className="image-featured">
-                                <img src={"http://localhost:1337" + article.image.url} alt={"http://localhost:1337" + article.image.url} />
+                                <img src={process.env.REACT_APP_BACKEND_URL + article.image.url} alt={process.env.REACT_APP_BACKEND_URL + article.image.url} />
                             </div>
                             <div className="date-tags">
                                 <div className="mr-auto">

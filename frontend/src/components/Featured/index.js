@@ -13,7 +13,7 @@ const Featured = () => {
                 <div className="row">
                     {
                     articles.slice(0, 1).map((article, i) => {
-                        let image = "http://localhost:1337" + article.image.url;
+                        let image = process.env.REACT_APP_BACKEND_URL + article.image.url;
                         return (
                             <div class="col col-6 mb-6">
                                 <Link to={`/article/${article.id}`}>
@@ -29,7 +29,7 @@ const Featured = () => {
                         <div className="rightsec">
                             {
                                 articles.slice(1, 3).map((article, i) => {
-                                    let image = "http://localhost:1337" + article.image.url;
+                                    let image = process.env.REACT_APP_BACKEND_URL + article.image.url;
                                     return (
                                         <Link to={`/article/${article.id}`}>
                                             <div className="mainherosec" style={{backgroundImage:`url(${image})`}}>
