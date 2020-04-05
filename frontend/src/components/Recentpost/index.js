@@ -12,7 +12,7 @@ const Recentpost = () => {
                         return (
                             <div>
                                 {
-                                    articles.slice(0, 4).map((article, i) => {
+                                    articles.slice(0, 5).map((article, i) => {
                                         return (
                                             <Link to={`/article/${article.id}`}>
                                                 <div className="thumnailimage">

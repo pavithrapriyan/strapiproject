@@ -12,7 +12,7 @@ return (
                             return (
                                 <div>
                                     {
-                                        categories.map((category) => {
+                                        categories.slice(0,5).map((category) => {
                                             return (
                                                 <li>
                                                     <Link class="text-capitalize" to={`/category/${category.id}`}>
