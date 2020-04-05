@@ -23,7 +23,7 @@
       "required": false
     },
     "published_at": {
-      "type": "date"
+      "type": "datetime"
     },
     "category": {
       "model": "category",

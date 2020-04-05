@@ -3,9 +3,9 @@ import { useParams } from "react-router";
 import Query from "../../components/Query";  
 import ReactMarkdown from "react-markdown";  
 import Moment from "react-moment";
-
 import ARTICLE_QUERY from "../../queries/article/article";
-import { Link } from "react-router-dom";
+import Sidebar from "../../components/Sidebar"
+
 
 const Article = () => {  
   let { id } = useParams();
@@ -39,47 +39,7 @@ const Article = () => {
                             <ReactMarkdown source={article.content} />
                         </div>
                         <div className="col-4">
-                            <div className="sidebar">
-                                <h4 className="heading-sidebar">Recent Post</h4>
-                                <div className="recentpost">
-                                    <Link to="">
-                                        <div className="thumnailimage">
-                                            <img src="http://localhost:1337/uploads/7f60f6920a0b45b3a0688e4713947e4f.jpg" alt="" />
-                                        </div>
-                                        <div className="Contentarea">
-                                            Top Free And Paid Guest Posting Sites List 2020
-                                        </div>
-                                    </Link>
-                                    <Link to="">
-                                        <div className="thumnailimage">
-                                            <img src="http://localhost:1337/uploads/7f60f6920a0b45b3a0688e4713947e4f.jpg" alt="" />
-                                        </div>
-                                        <div className="Contentarea">
-                                            Top Free And Paid Guest Posting Sites List 2020
-                                        </div>
-                                    </Link>
-                                </div>
-                                <h4 className="heading-sidebar mt-4 mb-3">Top Category</h4>
-                                <div className="topcategory">
-                                    <ul>
-                                        <li>
-                                            <Link to="">
-                                                Trends
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="">
-                                                Trends
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="">
-                                                Trends
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <Sidebar />
                         </div>
                     </div>
                 </div>    
